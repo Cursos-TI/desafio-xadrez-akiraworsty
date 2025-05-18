@@ -1,32 +1,72 @@
-#include <stdio.h>
+#include <stdio.h> 
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+int main(){
 
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    //definicao de constantes
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    #define mov_torre 5
+    #define mov_bispo 5
+    #define mov_rainha 8
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+
+    //Movimentacao da torre
+    //5 casas para a direita
+
+    printf("Movimentacao da Torre\n");
+
+    for(int a = 0; a < mov_torre; a++) {
+         printf("Direita\n"); //Imprime direcao do mov.
+    }
+
+    printf("---------\n");
+    printf("---------\n");
+
+    printf("Movimentacao do Bispo\n");
+
+    //Movimentacao do Bispo
+    //5 casas na diagonal para cima e para a direita.
+    
+    int b = 0;
+    while(b <mov_bispo) {
+        printf("Direita, Cima\n"); //Imprime direcao do mov.
+        b++;
+
+    }
+
+    printf("---------\n");
+    printf("---------\n");
+
+    printf("Movimentacao da Rainha\n");
+
+    //Movimentacao da Rainha
+    //Move-se 8 casas para a direita
+
+    int c = 0;
+    do
+    { printf("Direita\n");
+        c++;
+        
+    } while (c <mov_rainha);
+    
+
+
+
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
